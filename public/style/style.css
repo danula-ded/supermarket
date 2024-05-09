@@ -242,19 +242,31 @@ h2 {
 
 .footer {
   background-color: #000;
-  color: #fff;
-}
-.footer__links {
   display: flex;
-  padding: 40px;
+  padding: 154px 0 163px 0;
+  gap: 117px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.footer__link {
+.footer__links {
   display: flex;
-  gap: 20px;
+  gap: 105px;
+}
+.footer__link {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48.41px;
+  text-align: left;
+  text-decoration: none;
+  color: #fff;
 }
 .copyraiting {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38.73px;
   padding: 20px;
+  color: #fff;
 }
