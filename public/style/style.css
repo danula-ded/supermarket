@@ -352,19 +352,15 @@ h2 {
   gap: 105px;
 }
 .footer__link {
-  font-family: Inter;
   font-size: 40px;
   font-weight: 400;
   line-height: 48.41px;
-  text-align: left;
   text-decoration: none;
   color: #fff;
 }
 .copyraiting {
-  font-family: Inter;
   font-size: 32px;
   font-weight: 400;
-  line-height: 38.73px;
   margin: 0;
   color: #fff;
 }

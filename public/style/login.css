@@ -103,20 +103,34 @@ textarea {
 }
 
 button {
-  background-color: #4CAF50; /* Customize as needed */
-  color: white;
-  padding: 10px 20px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  background: linear-gradient(
+    87.08deg,
+    #f3ffc2 0%,
+    #2dc34e 34.5%,
+    #40b7c7 69%,
+    #be06ff 100%
+  );
+  padding: 10px 40px;
   border: none;
-  border-radius: 5px;
+  border-radius: 40px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #45a049; /* Customize as needed */
+  background: linear-gradient(
+    87.08deg,
+    #f3ffc2 0%,
+    #2dc34e 34.5%,
+    #40b7c7 69%,
+    #be06ff 100%
+  );
 }
 
 a {
-  color: #4CAF50; /* Customize as needed */
+  color: #4caf50; /* Customize as needed */
   text-decoration: none;
 }
 
@@ -127,4 +141,33 @@ a:hover {
 /* Media queries for responsiveness (optional) */
 @media only screen and (max-width: 768px) {
   /* Adjust styles for smaller screens */
+}
+
+/* футер */
+
+.footer {
+  background-color: #000;
+  display: flex;
+  padding: 50px 0;
+  gap: 117px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__links {
+  display: flex;
+  gap: 105px;
+}
+.footer__link {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48.41px;
+  text-decoration: none;
+  color: #fff;
+}
+.copyraiting {
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0;
+  color: #fff;
 }
