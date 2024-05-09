@@ -75,7 +75,6 @@ header {
   text-align: center;
   color: #000;
   font-size: 24px;
-  font-family: Inter;
   font-weight: 400;
   word-wrap: break-word;
   margin: 0;
@@ -303,26 +302,46 @@ h2 {
 /* контакты */
 
 .contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 96px 288px;
+  gap: 200px;
 }
 .contacts__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .container-text__title {
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+  width: max-content;
 }
 .container-text__adress {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+  width: max-content;
 }
 .container-text__links {
+  text-decoration: none;
+  color: #000;
 }
 .contacts__google-map {
-  width: 600px;
-  height: 450px;
+  height: 470px;
+  width: 40vw;
   border: none;
 }
+
 /* футер */
 
 .footer {
   background-color: #000;
   display: flex;
-  padding: 154px 0 163px 0;
+  padding: 50px 0;
   gap: 117px;
   flex-direction: column;
   justify-content: center;
@@ -346,6 +365,6 @@ h2 {
   font-size: 32px;
   font-weight: 400;
   line-height: 38.73px;
-  padding: 20px;
+  margin: 0;
   color: #fff;
 }
