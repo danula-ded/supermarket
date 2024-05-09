@@ -255,32 +255,33 @@ h2 {
   padding: 33px 38px;
 }
 .feedback-form__wrapper {
+  width: 100%;
   display: flex;
-  gap: 93px;
   margin-bottom: 46px;
 }
 .form-control {
   box-shadow: 0px 4px 4px 0px #00000040;
   border: 1px solid #000000;
   background-color: #f3ffc2;
-  padding: 15px 0 15px 55px;
+  padding: 16px 45px;
   border-radius: 60px;
   font-size: 24px;
   color: #000;
-  width: 100%;
+  width: -webkit-fill-available;
 }
 .feedback-form__name {
-  width: 40%;
+  width: 35%;
+  margin-right: 93px;
 }
 .feedback-form__email {
-  width: 50%;
-}
-.feedback-form__textarea {
-  padding: 25px 55px;
+  width: 55%;
 }
 .feedback-form__btn {
+  margin-top: 64px;
 }
 .btn-submit {
+  display: block;
+  margin: 0 auto;
   font-family: Inter;
   font-size: 32px;
   font-weight: 800;
