@@ -32,6 +32,8 @@ header {
   align-items: center;
   gap: 51px;
   display: inline-flex;
+  color: #000;
+  text-decoration: none;
 }
 .HeaderPanel .Logo .Logo1 {
   width: 150px;
@@ -279,12 +281,12 @@ h2 {
   margin-top: 64px;
 }
 .btn-submit {
+  text-align: center;
   display: block;
+  color: #fff;
   margin: 0 auto;
-  font-family: Inter;
   font-size: 32px;
   font-weight: 800;
-  color: #fff;
   text-align: center;
   padding: 26px 84px 19px 84px;
   border-radius: 70px;
@@ -296,7 +298,20 @@ h2 {
     #40b7c7 69%,
     #be06ff 100%
   );
-  box-shadow: 0px 4px 4px 0px #00000040;
+  padding: 10px 0;
+  border: none;
+  border-radius: 70px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(
+    87.08deg,
+    #eaff96 0%,
+    #26ab42 34.5%,
+    #379fac 69%,
+    #a706e1 100%
+  );
 }
 
 /* контакты */

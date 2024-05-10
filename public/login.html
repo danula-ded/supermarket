@@ -10,47 +10,52 @@
   <body>
     <header>
       <div class="HeaderPanel">
-        <div class="Logo">
+        <a href="/public/index.html" class="Logo">
           <img class="Logo1" src="/public/images/logo.png" />
-          <p>Еда+</p>
-        </div>
+          <p class="Logo__text">Еда+</p>
+        </a>
         <nav class="Panel">
           <a href="/public/index.html">Главная</a>
           <a href="/public/index.html#contacts_id">Контакты</a>
         </nav>
       </div>
     </header>
-    <main class="container">
-      <h1>Интернет-магазин продуктов для колледжа - Вход в систему</h1>
+    <main class="wrapper">
+      <div class="container">
+        <h1>Авторизация</h1>
 
-      <form action="/auth/signin" method="post" id="login-form">
-        <div class="form-group">
-          <label for="email">Электронная почта:</label>
-          <input type="email" name="email" id="email" required />
-        </div>
+        <form action="/auth/signin" method="post" id="login-form">
+          <div class="form-group">
+            <label for="email">Электронная почта:</label>
+            <input type="email" name="email" id="email" required />
+          </div>
 
-        <div class="form-group">
-          <label for="password">Пароль:</label>
-          <input type="password" name="password" id="password" required />
-        </div>
+          <div class="form-group">
+            <label for="password">Пароль:</label>
+            <input type="password" name="password" id="password" required />
+          </div>
 
-        <div class="form-group">
-          <button type="submit" id="login-button">Зайти</button>
-        </div>
-      </form>
-      <p>
-        У вас нет учетной записи?
-        <a href="/public/reg.html">Зарегистрируйтесь здесь.</a>
-      </p>
+          <div class="form-group">
+            <button type="submit" class="btn-submit" id="login-button">
+              ОТПРАВИТЬ
+            </button>
+          </div>
+        </form>
+        <p>
+          У вас нет учетной записи?
+          <a class="reg_link" href="/public/reg.html"
+            >Зарегистрируйтесь здесь.</a
+          >
+        </p>
+      </div>
     </main>
-
     <footer class="footer">
       <div class="footer__links">
         <a href="/public/login.html" class="footer__link">Продукты</a>
         <a href="/public/login.html" class="footer__link">Профиль</a>
         <a href="" class="footer__link">Контакты</a>
       </div>
-      <h3 class="#contacts_id">
+      <h3 class="copyraiting">
         ©2024 онлайн-столовая для СПО. Все права защищены
       </h3>
     </footer>
