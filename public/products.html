@@ -20,49 +20,262 @@
       </div>
     </header>
     <main class="container">
-      <h1>Регистрация</h1>
-      <form action="/auth/signup" method="post" id="registration-form">
-        <div class="form-group">
-          <label for="name">Имя:</label>
-          <input type="text" name="name" id="name" required />
-        </div>
-        <div class="form-group">
-          <label for="surname">Фамилия:</label>
-          <input type="text" name="surname" id="surname" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Электронная почта:</label>
-          <input type="email" name="email" id="email" required />
-        </div>
-        <div class="form-group">
-          <label for="password">Пароль (мин 8 символов):</label>
-          <input type="password" name="password" id="password" required />
-        </div>
-        <div class="form-group">
-          <label for="confirm-password">Подтверждение пароля:</label>
+      <h1 class="main__title">Продукты вашего колледжа</h1>
+      <form
+        action="/auth/signup"
+        class="container__serch"
+        method="post"
+        id="registration-form"
+      >
+        <div class="serch">
           <input
-            type="password"
-            name="confirm-password"
-            id="confirm-password"
+            class="serch__input"
+            type="text"
+            name="serch"
+            id="serch"
+            placeholder="поиск по продуктам"
             required
           />
-          <small
-            >Пароли должны совпадать с паролем учетной записи колледжа и
-            соответствовать ему методические рекомендации.</small
-          >
-        </div>
-        <div class="form-group">
-          <button type="submit" class="btn-submit" id="register-button">
-            Регистрация
-          </button>
+
+          <img class="serch__img" src="/public/images/search.svg" alt="" />
         </div>
       </form>
-      <p>
-        У вас уже есть учетная запись?
-        <a href="/public/login.html" class="reg_link"
-          >Войдите в систему здесь.</a
-        >
-      </p>
+      <div class="container__products">
+        <div class="product__card">
+          <img src="/public/images/product_1.png" class="product__card__img" />
+          <div class="product__card__title">Хлеб</div>
+          <div class="product__card__price">200₽</div>
+          <div id="counter">
+            <button id="decrement">-</button>
+            <span id="count">0</span>
+            <button id="increment">+</button>
+          </div>
+          <button class="product__card__button btn-submit" id="addToCart">
+            В корзину
+          </button>
+        </div>
+        <div class="product__card">
+          <img src="/public/images/product_3.png" class="product__card__img" />
+          <div class="product__card__title">Сэндвич</div>
+          <div class="product__card__price">200₽</div>
+          <div id="counter">
+            <button id="decrement">-</button>
+            <span id="count">0</span>
+            <button id="increment">+</button>
+          </div>
+          <button class="product__card__button btn-submit" id="addToCart">
+            В корзину
+          </button>
+        </div>
+        <div class="product__card">
+          <img src="/public/images/product_1.png" class="product__card__img" />
+          <div class="product__card__title">Хлеб</div>
+          <div class="product__card__price">200₽</div>
+          <div id="counter">
+            <button id="decrement">-</button>
+            <span id="count">0</span>
+            <button id="increment">+</button>
+          </div>
+          <button class="product__card__button btn-submit" id="addToCart">
+            В корзину
+          </button>
+        </div>
+        <div class="product__card">
+          <img src="/public/images/product_2.png" class="product__card__img" />
+          <div class="product__card__title">Пицца</div>
+          <div class="product__card__price">200₽</div>
+          <div id="counter">
+            <button id="decrement">-</button>
+            <span id="count">0</span>
+            <button id="increment">+</button>
+          </div>
+          <button class="product__card__button btn-submit" id="addToCart">
+            В корзину
+          </button>
+        </div>
+        <div class="product__card">
+          <img src="/public/images/product_2.png" class="product__card__img" />
+          <div class="product__card__title">Сэндвич</div>
+          <div class="product__card__price">200₽</div>
+          <div id="counter">
+            <button id="decrement">-</button>
+            <span id="count">0</span>
+            <button id="increment">+</button>
+          </div>
+          <button class="product__card__button btn-submit" id="addToCart">
+            В корзину
+          </button>
+        </div>
+        <div class="product__card">
+          <img src="/public/images/product_1.png" class="product__card__img" />
+          <div class="product__card__title">Хлеб</div>
+          <div class="product__card__price">200₽</div>
+          <div id="counter">
+            <button id="decrement">-</button>
+            <span id="count">0</span>
+            <button id="increment">+</button>
+          </div>
+          <button class="product__card__button btn-submit" id="addToCart">
+            В корзину
+          </button>
+        </div>
+        <div class="product__card">
+          <img src="/public/images/product_1.png" class="product__card__img" />
+          <div class="product__card__title">Хлеб</div>
+          <div class="product__card__price">200₽</div>
+          <div id="counter">
+            <button id="decrement">-</button>
+            <span id="count">0</span>
+            <button id="increment">+</button>
+          </div>
+          <button class="product__card__button btn-submit" id="addToCart">
+            В корзину
+          </button>
+        </div>
+        <div class="product__card">
+          <img src="/public/images/product_1.png" class="product__card__img" />
+          <div class="product__card__title">Хлеб</div>
+          <div class="product__card__price">200₽</div>
+          <div id="counter">
+            <button id="decrement">-</button>
+            <span id="count">0</span>
+            <button id="increment">+</button>
+          </div>
+          <button class="product__card__button btn-submit" id="addToCart">
+            В корзину
+          </button>
+        </div>
+        <div class="product__card">
+          <img src="/public/images/product_2.png" class="product__card__img" />
+          <div class="product__card__title">Пицца</div>
+          <div class="product__card__price">200₽</div>
+          <div id="counter">
+            <button id="decrement">-</button>
+            <span id="count">0</span>
+            <button id="increment">+</button>
+          </div>
+          <button class="product__card__button btn-submit" id="addToCart">
+            В корзину
+          </button>
+        </div>
+        <div class="product__card">
+          <img src="/public/images/product_1.png" class="product__card__img" />
+          <div class="product__card__title">Хлеб</div>
+          <div class="product__card__price">200₽</div>
+          <div id="counter">
+            <button id="decrement">-</button>
+            <span id="count">0</span>
+            <button id="increment">+</button>
+          </div>
+          <button class="product__card__button btn-submit" id="addToCart">
+            В корзину
+          </button>
+        </div>
+        <div class="product__card">
+          <img src="/public/images/product_1.png" class="product__card__img" />
+          <div class="product__card__title">Хлеб</div>
+          <div class="product__card__price">200₽</div>
+          <div id="counter">
+            <button id="decrement">-</button>
+            <span id="count">0</span>
+            <button id="increment">+</button>
+          </div>
+          <button class="product__card__button btn-submit" id="addToCart">
+            В корзину
+          </button>
+        </div>
+        <div class="product__card">
+          <img src="/public/images/product_1.png" class="product__card__img" />
+          <div class="product__card__title">Хлеб</div>
+          <div class="product__card__price">200₽</div>
+          <div id="counter">
+            <button id="decrement">-</button>
+            <span id="count">0</span>
+            <button id="increment">+</button>
+          </div>
+          <button class="product__card__button btn-submit" id="addToCart">
+            В корзину
+          </button>
+        </div>
+        <div class="product__card">
+          <img src="/public/images/product_1.png" class="product__card__img" />
+          <div class="product__card__title">Хлеб</div>
+          <div class="product__card__price">200₽</div>
+          <div id="counter">
+            <button id="decrement">-</button>
+            <span id="count">0</span>
+            <button id="increment">+</button>
+          </div>
+          <button class="product__card__button btn-submit" id="addToCart">
+            В корзину
+          </button>
+        </div>
+        <div class="product__card">
+          <img src="/public/images/product_3.png" class="product__card__img" />
+          <div class="product__card__title">Сэндвич</div>
+          <div class="product__card__price">200₽</div>
+          <div id="counter">
+            <button id="decrement">-</button>
+            <span id="count">0</span>
+            <button id="increment">+</button>
+          </div>
+          <button class="product__card__button btn-submit" id="addToCart">
+            В корзину
+          </button>
+        </div>
+        <div class="product__card">
+          <img src="/public/images/product_2.png" class="product__card__img" />
+          <div class="product__card__title">Пицца</div>
+          <div class="product__card__price">200₽</div>
+          <div id="counter">
+            <button id="decrement">-</button>
+            <span id="count">0</span>
+            <button id="increment">+</button>
+          </div>
+          <button class="product__card__button btn-submit" id="addToCart">
+            В корзину
+          </button>
+        </div>
+        <div class="product__card">
+          <img src="/public/images/product_1.png" class="product__card__img" />
+          <div class="product__card__title">Хлеб</div>
+          <div class="product__card__price">200₽</div>
+          <div id="counter">
+            <button id="decrement">-</button>
+            <span id="count">0</span>
+            <button id="increment">+</button>
+          </div>
+          <button class="product__card__button btn-submit" id="addToCart">
+            В корзину
+          </button>
+        </div>
+        <div class="product__card">
+          <img src="/public/images/product_1.png" class="product__card__img" />
+          <div class="product__card__title">Хлеб</div>
+          <div class="product__card__price">200₽</div>
+          <div id="counter">
+            <button id="decrement">-</button>
+            <span id="count">0</span>
+            <button id="increment">+</button>
+          </div>
+          <button class="product__card__button btn-submit" id="addToCart">
+            В корзину
+          </button>
+        </div>
+        <div class="product__card">
+          <img src="/public/images/product_1.png" class="product__card__img" />
+          <div class="product__card__title">Хлеб</div>
+          <div class="product__card__price">200₽</div>
+          <div id="counter">
+            <button id="decrement">-</button>
+            <span id="count">0</span>
+            <button id="increment">+</button>
+          </div>
+          <button class="product__card__button btn-submit" id="addToCart">
+            В корзину
+          </button>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__links">
@@ -74,5 +287,7 @@
         ©2024 онлайн-столовая для СПО. Все права защищены
       </h3>
     </footer>
+
+    <script src="/public/scripts/counter.js"></script>
   </body>
 </html>
