@@ -281,7 +281,6 @@ h2 {
   margin-top: 64px;
 }
 .btn-submit {
-  text-align: center;
   display: block;
   color: #fff;
   margin: 0 auto;
@@ -298,9 +297,7 @@ h2 {
     #40b7c7 69%,
     #be06ff 100%
   );
-  padding: 10px 0;
   border: none;
-  border-radius: 70px;
   cursor: pointer;
 }
 

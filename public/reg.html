@@ -9,59 +9,62 @@
   <body>
     <header>
       <div class="HeaderPanel">
-        <div class="Logo">
+        <a href="/public/index.html" class="Logo">
           <img class="Logo1" src="/public/images/logo.png" />
-          <p>Еда+</p>
-        </div>
+          <p class="Logo__text">Еда+</p>
+        </a>
         <nav class="Panel">
-          <a href="/public/index.html#feedback_id">Главная</a>
-          <a href="">Профиль</a>
-          <a href="">Контакты</a>
+          <a href="/public/index.html">Главная</a>
+          <a href="/public/index.html#contacts_id">Контакты</a>
         </nav>
       </div>
     </header>
-    <main class="container">
-      <h1>Регистрация</h1>
-      <form action="/auth/signup" method="post" id="registration-form">
-        <div class="form-group">
-          <label for="name">Имя:</label>
-          <input type="text" name="name" id="name" required />
-        </div>
-        <div class="form-group">
-          <label for="surname">Фамилия:</label>
-          <input type="text" name="surname" id="surname" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Электронная почта:</label>
-          <input type="email" name="email" id="email" required />
-        </div>
-        <div class="form-group">
-          <label for="password">Пароль (мин 8 символов):</label>
-          <input type="password" name="password" id="password" required />
-        </div>
-        <div class="form-group">
-          <label for="confirm-password">Подтверждение пароля:</label>
-          <input
-            type="password"
-            name="confirm-password"
-            id="confirm-password"
-            required
-          />
-          <small
-            >Пароли должны совпадать с паролем учетной записи колледжа и
-            соответствовать ему методические рекомендации.</small
+    <main class="wrapper">
+      <div class="container">
+        <h1>Регистрация</h1>
+        <form action="/auth/signup" method="post" id="registration-form">
+          <div class="form-group">
+            <label for="name">Имя:</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="surname">Фамилия:</label>
+            <input type="text" name="surname" id="surname" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Электронная почта:</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Пароль (мин 8 символов):</label>
+            <input type="password" name="password" id="password" required />
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Подтверждение пароля:</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              required
+            />
+            <small
+              >Пароли должны совпадать с паролем учетной записи колледжа и
+              соответствовать ему методические рекомендации.</small
+            >
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn-submit" id="register-button">
+              Регистрация
+            </button>
+          </div>
+        </form>
+        <p>
+          У вас уже есть учетная запись?
+          <a href="/public/login.html" class="reg_link"
+            >Войдите в систему здесь.</a
           >
-        </div>
-        <div class="form-group">
-          <button type="submit" class="btn-submit" id="register-button">
-            Регистрация
-          </button>
-        </div>
-      </form>
-      <p>
-        У вас уже есть учетная запись?
-        <a href="/public/login.html">Войдите в систему здесь.</a>
-      </p>
+        </p>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__links">
