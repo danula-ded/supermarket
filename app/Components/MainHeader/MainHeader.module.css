@@ -1,78 +1,75 @@
-.MainHeader{
-    width: 1920;
-    height: auto;
-    padding: 44 187 352 351;
-    justify-content: 'center';
-    align-items: center;
-    display:inline-flex;
+.MainHeader {
+  width: 1920;
+  height: auto;
+  padding: 44 187 352 351;
+  justify-content: "center";
+  align-items: center;
+  display: inline-flex;
 }
-  
-  .HeaderTextButton {
-    align-self: stretch;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 60px;
-    display: inline-flex;
-  }
-  
-  .HeaderText {
-    width: 1217px;
-    height: 219px;
-    position: relative;
-  }
-  
-  .h1 {
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    color: black;
-    font-size: 100px;
-    font-family: Inter;
-    font-weight: 400;
-    word-wrap: break-word;
-  }
-  
-  .HeaderText .p {
-    left: 50%;
-    top: 190px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    color: black;
-    font-size: 24px;
-    font-family: Inter;
-    font-weight: 400;
-    word-wrap: break-word;
-    text-align: center;
-      
-  }
-  
-  
-  .Button {
-    padding-left: 59px;
-    padding-right: 59px;
-    padding-top: 21px;
-    padding-bottom: 21px;
-    border-radius: 90px;
-    border: 2px white solid;
-    justify-content: center;
-    align-items: center;
-    display: inline-flex;
-    background-color: aquamarine;
-  }
-  
-  .Button .button-text {
-    color: white;
-    background: none;
-    font-size: 40px;
-    font-family: Inter;
-    font-weight: 400;
-    border: none;
-    word-wrap: break-word;
-  }
-  
+
+.HeaderTextButton {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 60px;
+  display: inline-flex;
+}
+
+.HeaderText {
+  width: 1217px;
+  height: 219px;
+  position: relative;
+}
+
+.h1 {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  color: black;
+  font-size: 100px;
+
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.HeaderText .p {
+  left: 50%;
+  top: 190px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: black;
+  font-size: 24px;
+
+  font-weight: 400;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.Button {
+  padding-left: 59px;
+  padding-right: 59px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  border-radius: 90px;
+  border: 2px white solid;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  background-color: aquamarine;
+}
+
+.Button .button-text {
+  color: white;
+  background: none;
+  font-size: 40px;
+
+  font-weight: 400;
+  border: none;
+  word-wrap: break-word;
+}

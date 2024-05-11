@@ -19,6 +19,7 @@
         </nav>
       </div>
     </header>
+
     <main class="container">
       <h1 class="main__title">Продукты вашего колледжа</h1>
       <form
@@ -40,17 +41,16 @@
           <img class="serch__img" src="/public/images/search.svg" alt="" />
         </div>
       </form>
+
       <div class="container__products">
         <div class="product__card">
           <img src="/public/images/product_1.png" class="product__card__img" />
           <div class="product__card__title">Хлеб</div>
           <div class="product__card__price">200₽</div>
-          <div id="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
-          </div>
-          <button class="product__card__button btn-submit" id="addToCart">
+          <button
+            class="product__card__button btn-submit"
+            onclick="createCounter(this)"
+          >
             В корзину
           </button>
         </div>
@@ -58,25 +58,10 @@
           <img src="/public/images/product_3.png" class="product__card__img" />
           <div class="product__card__title">Сэндвич</div>
           <div class="product__card__price">200₽</div>
-          <div id="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
-          </div>
-          <button class="product__card__button btn-submit" id="addToCart">
-            В корзину
-          </button>
-        </div>
-        <div class="product__card">
-          <img src="/public/images/product_1.png" class="product__card__img" />
-          <div class="product__card__title">Хлеб</div>
-          <div class="product__card__price">200₽</div>
-          <div id="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
-          </div>
-          <button class="product__card__button btn-submit" id="addToCart">
+          <button
+            class="product__card__button btn-submit"
+            onclick="createCounter(this)"
+          >
             В корзину
           </button>
         </div>
@@ -84,129 +69,10 @@
           <img src="/public/images/product_2.png" class="product__card__img" />
           <div class="product__card__title">Пицца</div>
           <div class="product__card__price">200₽</div>
-          <div id="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
-          </div>
-          <button class="product__card__button btn-submit" id="addToCart">
-            В корзину
-          </button>
-        </div>
-        <div class="product__card">
-          <img src="/public/images/product_2.png" class="product__card__img" />
-          <div class="product__card__title">Сэндвич</div>
-          <div class="product__card__price">200₽</div>
-          <div id="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
-          </div>
-          <button class="product__card__button btn-submit" id="addToCart">
-            В корзину
-          </button>
-        </div>
-        <div class="product__card">
-          <img src="/public/images/product_1.png" class="product__card__img" />
-          <div class="product__card__title">Хлеб</div>
-          <div class="product__card__price">200₽</div>
-          <div id="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
-          </div>
-          <button class="product__card__button btn-submit" id="addToCart">
-            В корзину
-          </button>
-        </div>
-        <div class="product__card">
-          <img src="/public/images/product_1.png" class="product__card__img" />
-          <div class="product__card__title">Хлеб</div>
-          <div class="product__card__price">200₽</div>
-          <div id="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
-          </div>
-          <button class="product__card__button btn-submit" id="addToCart">
-            В корзину
-          </button>
-        </div>
-        <div class="product__card">
-          <img src="/public/images/product_1.png" class="product__card__img" />
-          <div class="product__card__title">Хлеб</div>
-          <div class="product__card__price">200₽</div>
-          <div id="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
-          </div>
-          <button class="product__card__button btn-submit" id="addToCart">
-            В корзину
-          </button>
-        </div>
-        <div class="product__card">
-          <img src="/public/images/product_2.png" class="product__card__img" />
-          <div class="product__card__title">Пицца</div>
-          <div class="product__card__price">200₽</div>
-          <div id="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
-          </div>
-          <button class="product__card__button btn-submit" id="addToCart">
-            В корзину
-          </button>
-        </div>
-        <div class="product__card">
-          <img src="/public/images/product_1.png" class="product__card__img" />
-          <div class="product__card__title">Хлеб</div>
-          <div class="product__card__price">200₽</div>
-          <div id="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
-          </div>
-          <button class="product__card__button btn-submit" id="addToCart">
-            В корзину
-          </button>
-        </div>
-        <div class="product__card">
-          <img src="/public/images/product_1.png" class="product__card__img" />
-          <div class="product__card__title">Хлеб</div>
-          <div class="product__card__price">200₽</div>
-          <div id="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
-          </div>
-          <button class="product__card__button btn-submit" id="addToCart">
-            В корзину
-          </button>
-        </div>
-        <div class="product__card">
-          <img src="/public/images/product_1.png" class="product__card__img" />
-          <div class="product__card__title">Хлеб</div>
-          <div class="product__card__price">200₽</div>
-          <div id="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
-          </div>
-          <button class="product__card__button btn-submit" id="addToCart">
-            В корзину
-          </button>
-        </div>
-        <div class="product__card">
-          <img src="/public/images/product_1.png" class="product__card__img" />
-          <div class="product__card__title">Хлеб</div>
-          <div class="product__card__price">200₽</div>
-          <div id="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
-          </div>
-          <button class="product__card__button btn-submit" id="addToCart">
+          <button
+            class="product__card__button btn-submit"
+            onclick="createCounter(this)"
+          >
             В корзину
           </button>
         </div>
@@ -214,69 +80,16 @@
           <img src="/public/images/product_3.png" class="product__card__img" />
           <div class="product__card__title">Сэндвич</div>
           <div class="product__card__price">200₽</div>
-          <div id="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
-          </div>
-          <button class="product__card__button btn-submit" id="addToCart">
-            В корзину
-          </button>
-        </div>
-        <div class="product__card">
-          <img src="/public/images/product_2.png" class="product__card__img" />
-          <div class="product__card__title">Пицца</div>
-          <div class="product__card__price">200₽</div>
-          <div id="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
-          </div>
-          <button class="product__card__button btn-submit" id="addToCart">
-            В корзину
-          </button>
-        </div>
-        <div class="product__card">
-          <img src="/public/images/product_1.png" class="product__card__img" />
-          <div class="product__card__title">Хлеб</div>
-          <div class="product__card__price">200₽</div>
-          <div id="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
-          </div>
-          <button class="product__card__button btn-submit" id="addToCart">
-            В корзину
-          </button>
-        </div>
-        <div class="product__card">
-          <img src="/public/images/product_1.png" class="product__card__img" />
-          <div class="product__card__title">Хлеб</div>
-          <div class="product__card__price">200₽</div>
-          <div id="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
-          </div>
-          <button class="product__card__button btn-submit" id="addToCart">
-            В корзину
-          </button>
-        </div>
-        <div class="product__card">
-          <img src="/public/images/product_1.png" class="product__card__img" />
-          <div class="product__card__title">Хлеб</div>
-          <div class="product__card__price">200₽</div>
-          <div id="counter">
-            <button id="decrement">-</button>
-            <span id="count">0</span>
-            <button id="increment">+</button>
-          </div>
-          <button class="product__card__button btn-submit" id="addToCart">
+          <button
+            class="product__card__button btn-submit"
+            onclick="createCounter(this)"
+          >
             В корзину
           </button>
         </div>
       </div>
     </main>
+
     <footer class="footer">
       <div class="footer__links">
         <a href="/public/login.html" class="footer__link">Продукты</a>

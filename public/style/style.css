@@ -1,7 +1,17 @@
-body {
-  margin: 0px;
+@font-face {
+  font-family: "hleb";
+  src: url(/public/fonts/Dudka/hleb.otf);
+}
+
+* {
+  margin: 0;
   padding: 0;
-  box-sizing: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "hleb", Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
 }
 
 /*header*/
@@ -48,7 +58,7 @@ header {
 .HeaderPanel .Panel > a {
   color: black;
   font-size: 40px;
-  font-family: Inter;
+
   font-weight: 400;
   word-wrap: break-word;
   text-decoration: none;
@@ -99,7 +109,7 @@ header {
   display: inline-flex;
   color: white;
   font-size: 48px;
-  font-family: Inter;
+
   font-weight: 400;
   word-wrap: break-word;
 }
@@ -131,7 +141,7 @@ h2 {
   text-align: center;
   color: black;
   font-size: 36px;
-  font-family: Inter;
+
   font-weight: 400;
   word-wrap: break-word;
 }
@@ -145,7 +155,7 @@ h2 {
   top: 82px;
   color: black;
   font-size: 32px;
-  font-family: Inter;
+
   font-weight: 400;
   word-wrap: break-word;
 }

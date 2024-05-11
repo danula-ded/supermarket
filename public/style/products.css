@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "hleb";
+  src: url(/public/fonts/Dudka/hleb.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "hleb", Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
 /* хеадер */
 header {
   display: flex;
@@ -36,7 +51,7 @@ header {
 .HeaderPanel .Panel > a {
   color: black;
   font-size: 36px;
-  font-family: Inter;
+
   font-weight: 400;
   word-wrap: break-word;
   text-decoration: none;
@@ -49,25 +64,9 @@ header {
 }
 
 /* main */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  background-color: #fff;
-}
-
 .btn-submit {
-  text-align: center;
-  display: block;
   width: 200px;
   color: #fff;
-  margin: 0 auto;
   font-weight: 800;
   background: linear-gradient(
     87.08deg,
@@ -80,6 +79,11 @@ body {
   border: none;
   border-radius: 70px;
   cursor: pointer;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
 }
 
 .btn-submit:hover {
@@ -90,6 +94,31 @@ body {
     #379fac 69%,
     #a706e1 100%
   );
+}
+
+/* стили для изменения кооличества пробуктов (все это добовляеться для js)*/
+
+.btn-submit > button {
+  border: none;
+  background: none;
+  font-size: 24px;
+  font-weight: 800;
+  color: #000;
+  cursor: pointer;
+  width: 30px;
+}
+.btn-submit > input {
+  border: none;
+  background: none;
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  cursor: pointer;
+  width: 100px;
+  text-align: center;
+}
+.btn-submit > input:active {
+  border: #bbbbbb 1px solid;
 }
 
 /* контейнер */
@@ -127,6 +156,7 @@ body {
   color: #000;
   font-size: 24px;
   font-weight: 700;
+  font-family: "hleb", Arial, sans-serif;
 }
 .serch__img {
   padding: 5px 19px;
@@ -151,7 +181,7 @@ body {
   align-items: center;
   padding: 23px 29px 23px 29px;
   gap: 18px;
-  opacity: 0px;
+  border-radius: 50px;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: min-content;

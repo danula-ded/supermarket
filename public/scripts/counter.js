@@ -1,27 +1,85 @@
-const decrementButton = document.getElementById("decrement");
-const incrementButton = document.getElementById("increment");
-const countElement = document.getElementById("count");
-const addToCartButton = document.getElementById("addToCart");
+function createCounter(btn) {
+  // Делаем кнопку неактивной
+  btn.disabled = true;
 
-// FIXME: здесь надо сделать так чтобы каждый продукт добавлялся в корзину по нажатию на кнопку отдельно
+  // Создаем новый элемент input для ввода чисел
+  var inputField = document.createElement("input");
+  inputField.type = "number";
+  inputField.value = 1;
 
-let count = 0;
+  // Создаем переменную для таймера
+  var timeoutId;
+  update_to_cart(inputField.value);
 
-decrementButton.addEventListener("click", () => {
-  count--;
-  updateCounter();
-});
+  // Добавляем обработчик события keydown для поля ввода
+  inputField.addEventListener("keydown", function (event) {
+    // Проверяем, нажата ли клавиша "-"
+    if (event.key === "-") {
+      // Предотвращаем действие по умолчанию (вставку символа "-")
+      event.preventDefault();
+    }
+  });
 
-incrementButton.addEventListener("click", () => {
-  count++;
-  updateCounter();
-});
+  // Создаем кнопку "+"
+  var incrementBtn = document.createElement("button");
+  incrementBtn.textContent = "+";
+  incrementBtn.onclick = function () {
+    inputField.value = parseInt(inputField.value) + 1;
+    update_to_cart(inputField.value);
+  };
 
-function updateCounter() {
-  countElement.textContent = count;
+  // Создаем кнопку "-"
+  var decrementBtn = document.createElement("button");
+  decrementBtn.textContent = "-";
+  decrementBtn.onclick = function () {
+    inputField.value = parseInt(inputField.value) - 1;
+
+    // делаем провеку при изменении значения оно не должно быть меньше 1 и не должно быть пустым
+    if (!check_value()) {
+      update_to_cart(inputField.value); // функция отправки данных в корзину
+    }
+  };
+
+  // Очищаем текущий элемент
+  btn.innerHTML = "";
+
+  // Добавляем обработчик события change для поля ввода
+  inputField.addEventListener("change", function () {
+    // делаем провеку при изменении значения оно не должно быть меньше 1 и не должно быть пустым
+    if (!check_value()) {
+      update_to_cart(inputField.value); // функция отправки данных в корзину
+    }
+  });
+
+  // Добавляем элементы на страницу
+  btn.appendChild(decrementBtn);
+  btn.appendChild(inputField);
+  btn.appendChild(incrementBtn);
+
+  // функция отправки данных в корзину
+  function update_to_cart(value) {
+    // Это функция, которая будет вызвана, при каждом изменении значения
+    // Добавляем обработчик события input для поля ввода
+    clearTimeout(timeoutId); // Отменяем предыдущий таймер
+    timeoutId = setTimeout(function () {
+      console.log("В корзине: " + value + " единиц");
+    }, 500); // Задержка в миллисекундах для определения завершения ввода
+  }
+  function check_value() {
+    if (
+      parseInt(inputField.value) <= 0 ||
+      isNaN(parseInt(inputField.value)) ||
+      inputField.value === ""
+    ) {
+      // Если значение становится <= 0, активируем основную кнопку и удаляем элементы
+      btn.disabled = false;
+      btn.textContent = "В корзину";
+      // Удаляем элементы
+      decrementBtn.remove();
+      inputField.remove();
+      incrementBtn.remove();
+      return true;
+    }
+    return false;
+  }
 }
-
-addToCartButton.addEventListener("click", () => {
-  addToCartButton.textContent = "В корзине";
-  addToCartButton.style.backgroundColor = "#28a745";
-});
