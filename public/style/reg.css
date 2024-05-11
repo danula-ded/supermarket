@@ -68,7 +68,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 290px);
+  min-height: calc(100vh - 140px);
 }
 .container {
   background-color: #fff;
@@ -77,7 +77,7 @@ header {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  max-width: 462px;
+  max-width: 480px;
 }
 
 h1 {

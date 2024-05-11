@@ -1,7 +1,10 @@
-function createCounter(btn) {
-  // Делаем кнопку неактивной
-  btn.disabled = true;
+// Выбираем все элементы с классом "example-class"
+var buttons = document.querySelectorAll(".busket__product__button");
 
+// Проходим по всем найденным кнопкам и навешиваем на них функцию обработчика
+buttons.forEach((btn) => createCounter(btn));
+
+function createCounter(btn) {
   // Создаем новый элемент input для ввода чисел
   var inputField = document.createElement("input");
   inputField.type = "number";
@@ -9,13 +12,12 @@ function createCounter(btn) {
 
   // Создаем переменную для таймера
   var timeoutId;
-  update_to_cart(inputField.value);
 
   // Добавляем обработчик события keydown для поля ввода
   inputField.addEventListener("keydown", function (event) {
     // Проверяем, нажата ли клавиша "-"
     if (event.key === "-" || event.key === "e") {
-      // Предотвращаем действие по умолчанию (вставку символа "-")
+      // Предотвращаем действие по умолчанию (вставку символа "-" / "e")
       event.preventDefault();
     }
   });
@@ -39,9 +41,6 @@ function createCounter(btn) {
       update_to_cart(inputField.value); // функция отправки данных в корзину
     }
   };
-
-  // Очищаем текущий элемент
-  btn.innerHTML = "";
 
   // Добавляем обработчик события change для поля ввода
   inputField.addEventListener("change", function () {
@@ -71,13 +70,8 @@ function createCounter(btn) {
       isNaN(parseInt(inputField.value)) ||
       inputField.value === ""
     ) {
-      // Если значение становится <= 0, активируем основную кнопку и удаляем элементы
-      btn.disabled = false;
-      btn.textContent = "В корзину";
-      // Удаляем элементы
-      decrementBtn.remove();
-      inputField.remove();
-      incrementBtn.remove();
+      // Если значение становится <= 0, то поле ввода равно 1
+      inputField.value = 1;
       return true;
     }
     return false;

@@ -68,7 +68,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 290px);
+  min-height: calc(100vh - 140px);
 }
 .container {
   background-color: #fff;
@@ -170,11 +170,6 @@ textarea {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-}
-
-/* Media queries for responsiveness (optional) */
-@media only screen and (max-width: 768px) {
-  /* Adjust styles for smaller screens */
 }
 
 /* футер */
