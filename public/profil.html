@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Интернет-магазин продуктов для колледжа - Вход в систему</title>
-    <link rel="stylesheet" href="/public/style/login.css" />
+    <link rel="stylesheet" href="/public/style/profil.css" />
   </head>
-
   <body>
     <header>
       <div class="HeaderPanel">
@@ -20,11 +19,86 @@
         </nav>
       </div>
     </header>
-    <main class="wrapper"></main>
+    <main class="wrapper">
+      <div class="info-profil">
+        <img class="info-profil__img" src="/public/images/person.png" alt="" />
+        <div class="info-profil__text">
+          <h1 class="title">Профиль</h1>
+          <hr class="info-profil__text__hr" />
+          <div class="info-profil__text__name">
+            <p>Имя</p>
+            <p id="name">***</p>
+          </div>
+          <hr class="info-profil__text__hr" />
+          <div class="info-profil__text__surname">
+            <p>Имя пользователя</p>
+            <p id="surname">***</p>
+          </div>
+          <hr class="info-profil__text__hr" />
+          <div class="info-profil__text__college">
+            <p>Имя пользователя</p>
+            <p id="college">***</p>
+          </div>
+          <hr class="info-profil__text__hr" />
+          <a href="#">Редактировать</a>
+        </div>
+      </div>
+      <div class="orders">
+        <h2 class="orders__title">История заказов</h2>
+
+        <!--Если заказов нет-->
+        <!-- <div class="orders__empty">
+          <p>У вас пока нет заказов</p>
+          <a href="/public/busket.html">Перейти в корзину</a>
+        </div> -->
+
+        <!--Если заказы есть-->
+        <details class="details">
+          <summary class="details__title">
+            <span class="details__title__identifier">***</span>
+            <span class="details__title__date">11/04/2024</span>
+          </summary>
+          <div class="details__content">
+            <div class="product__card">
+              <img
+                src="/public/images/product_1.png"
+                class="product__card__img"
+              />
+              <div class="product__card__title">Хлеб</div>
+              <div class="product__card__price">200₽</div>
+            </div>
+          </div>
+        </details>
+        <details class="details">
+          <summary class="details__title">
+            <span class="details__title__identifier">***</span>
+            <span class="details__title__date">13/04/2024</span>
+          </summary>
+          <div class="details__content">
+            <div class="product__card">
+              <img
+                src="/public/images/product_1.png"
+                class="product__card__img"
+              />
+              <div class="product__card__title">Хлеб</div>
+              <div class="product__card__price">200₽</div>
+            </div>
+            <div class="product__card">
+              <img
+                src="/public/images/product_2.png"
+                class="product__card__img"
+              />
+              <div class="product__card__title">Пицца</div>
+              <div class="product__card__price">300₽</div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </main>
     <footer class="footer">
       <div class="footer__links">
         <a href="/public/login.html" class="footer__link">Продукты</a>
-        <a href="/public/login.html" class="footer__link">Профиль</a>
+        <a href="/public/profil.html" class="footer__link">Профиль</a>
         <a href="" class="footer__link">Контакты</a>
       </div>
       <h3 class="copyraiting">
