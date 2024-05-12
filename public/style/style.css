@@ -1,6 +1,6 @@
 @font-face {
   font-family: "hleb";
-  src: url(/public/fonts/Dudka/hleb.otf);
+  src: url(fonts/Dudka/hleb.otf);
 }
 
 * {
@@ -25,7 +25,7 @@ header {
   flex-direction: column;
   padding-top: 20px;
   gap: 200px;
-  background-image: url("/public/images/background.png");
+  background-image: url("../images/background.png");
   background-size: cover;
   background-position: center;
 }
