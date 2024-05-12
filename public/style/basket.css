@@ -193,39 +193,43 @@ h1 {
 .pay {
   background: #f3ffc2;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  padding: 149px 213px;
 }
 .pay__wrapper {
   font-size: 40px;
   font-weight: 400;
+  width: 44vw;
 }
 .pay__total {
   display: flex;
   justify-content: space-between;
-  width: 845px;
-}
-.pay__total__title {
-}
-.pay__total__price {
+  margin-bottom: 106px;
 }
 .pay__card {
   display: flex;
   justify-content: space-between;
 }
-.pay__card__title {
-}
-.pay__card__text {
-}
-.pay__card__button {
+.pay__card__bind {
+  text-decoration: none;
+  color: #000;
 }
 .pay__button {
+  font-family: "hleb", Arial, sans-serif;
   width: 490px;
   height: 154px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
   padding: 53px 56px 53px 56px;
   border-radius: 20px;
+  background: #5eda4a;
+  font-size: 40px;
 }
-
+.pay__button:hover {
+  background: #48ab39;
+}
 /* футер */
 
 .footer {

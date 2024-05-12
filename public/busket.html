@@ -26,98 +26,40 @@
       <div class="container">
         <div id="busket">
           <div class="busket__product">
-            <input type="checkbox" class="product__checkbox" name="product" />
+            <input
+              type="checkbox"
+              class="product__checkbox"
+              name="product"
+              checked
+            />
             <img
               class="busket__product__img"
               src="/public/images/product_1.png"
             />
             <div class="busket__product__info">
-              <div class="busket__product__title">хлеб</div>
-              <div class="busket__product__price">200₽</div>
+              <div class="busket__product__title">Хлеб</div>
+              <div class="busket__product__price">
+                <span class="price">200</span>₽
+              </div>
             </div>
             <button class="busket__product__button btn-submit"></button>
           </div>
           <div class="busket__product">
-            <input type="checkbox" class="product__checkbox" name="product" />
+            <input
+              type="checkbox"
+              class="product__checkbox"
+              name="product"
+              checked
+            />
             <img
               class="busket__product__img"
-              src="/public/images/product_1.png"
+              src="/public/images/product_2.png"
             />
             <div class="busket__product__info">
-              <div class="busket__product__title">хлеб</div>
-              <div class="busket__product__price">200₽</div>
-            </div>
-            <button class="busket__product__button btn-submit"></button>
-          </div>
-          <div class="busket__product">
-            <input type="checkbox" class="product__checkbox" name="product" />
-            <img
-              class="busket__product__img"
-              src="/public/images/product_1.png"
-            />
-            <div class="busket__product__info">
-              <div class="busket__product__title">хлеб</div>
-              <div class="busket__product__price">200₽</div>
-            </div>
-            <button class="busket__product__button btn-submit"></button>
-          </div>
-          <div class="busket__product">
-            <input type="checkbox" class="product__checkbox" name="product" />
-            <img
-              class="busket__product__img"
-              src="/public/images/product_1.png"
-            />
-            <div class="busket__product__info">
-              <div class="busket__product__title">хлеб</div>
-              <div class="busket__product__price">200₽</div>
-            </div>
-            <button class="busket__product__button btn-submit"></button>
-          </div>
-          <div class="busket__product">
-            <input type="checkbox" class="product__checkbox" name="product" />
-            <img
-              class="busket__product__img"
-              src="/public/images/product_1.png"
-            />
-            <div class="busket__product__info">
-              <div class="busket__product__title">хлеб</div>
-              <div class="busket__product__price">200₽</div>
-            </div>
-            <button class="busket__product__button btn-submit"></button>
-          </div>
-          <div class="busket__product">
-            <input type="checkbox" class="product__checkbox" name="product" />
-            <img
-              class="busket__product__img"
-              src="/public/images/product_1.png"
-            />
-            <div class="busket__product__info">
-              <div class="busket__product__title">хлеб</div>
-              <div class="busket__product__price">200₽</div>
-            </div>
-            <button class="busket__product__button btn-submit"></button>
-          </div>
-          <div class="busket__product">
-            <input type="checkbox" class="product__checkbox" name="product" />
-            <img
-              class="busket__product__img"
-              src="/public/images/product_1.png"
-            />
-            <div class="busket__product__info">
-              <div class="busket__product__title">хлеб</div>
-              <div class="busket__product__price">200₽</div>
-            </div>
-            <button class="busket__product__button btn-submit"></button>
-          </div>
-          <div class="busket__product">
-            <input type="checkbox" class="product__checkbox" name="product" />
-            <img
-              class="busket__product__img"
-              src="/public/images/product_1.png"
-            />
-            <div class="busket__product__info">
-              <div class="busket__product__title">хлеб</div>
-              <div class="busket__product__price">200₽</div>
+              <div class="busket__product__title">Пицца</div>
+              <div class="busket__product__price">
+                <span class="price">300</span>₽
+              </div>
             </div>
             <button class="busket__product__button btn-submit"></button>
           </div>
@@ -126,17 +68,21 @@
       <div class="pay">
         <div class="pay__wrapper">
           <div class="pay__total">
-            <div class="pay__total__title">Итого:</div>
-            <div class="pay__total__price">1000₽</div>
+            <div>Итого:</div>
+            <div id="total-price"></div>
           </div>
           <div class="pay__card">
-            <div class="pay__card__title">Способ оплаты:</div>
+            <div>Способ оплаты:</div>
             <div class="pay__card__text">
-              <button class="pay__card__button">Привизать карту</button>
+              <a href="#" class="pay__card__bind" id="attach-card"
+                >Привизать карту</a
+              >
             </div>
           </div>
         </div>
-        <button class="pay__button">Оплатить</button>
+        <a href="/public/order.html" class="pay__button" id="payment">
+          Оформить заказ
+        </a>
       </div>
     </main>
     <footer class="footer">
@@ -150,7 +96,7 @@
         ©2024 онлайн-столовая для СПО. Все права защищены
       </h3>
     </footer>
-
     <script src="/public/scripts/counter__basket.js"></script>
+    <script src="/public/scripts/total__sum.js"></script>
   </body>
 </html>
