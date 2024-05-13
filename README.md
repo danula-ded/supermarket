@@ -1,8 +1,10 @@
 # Frontend для системы столовых СПО
 
-## Getting Started
+## Базовый просмотр интерфейса доступен по данной сылке [SUPERMARKET](danula-ded.github.io/supermarket/)
 
-First, run the development server:
+## Приступая к работе
+
+Сначала запустите сервер разработки:
 
 ```bash
 npm run dev
@@ -14,7 +16,5 @@ pnpm dev
 bun dev
 ```
 
-### Open 
-[http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Откройте
+[http://localhost:3000](http://localhost:3000) с помощью вашего браузера, чтобы увидеть результат. Страница автоматически обновляется по мере редактирования файла.
