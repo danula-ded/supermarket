@@ -1,6 +1,6 @@
 # Frontend для системы столовых СПО
 
-## Базовый просмотр интерфейса доступен по данной сылке [SUPERMARKET](danula-ded.github.io/supermarket/)
+## Базовый просмотр интерфейса доступен по данной сылке [SUPERMARKET](https://danula-ded.github.io/supermarket/)
 
 ## Приступая к работе
 
