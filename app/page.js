@@ -1,5 +1,5 @@
-import { Header } from "./Components/Header/header.jsx";
-import { MainHeader } from "./Components/MainHeader/main-header.jsx";
+import { Header } from "./Components/Header/Header.jsx";
+import { MainHeader } from "./Components/MainHeader/MainHeader.jsx";
 
 export default async function Home() {
   return (
